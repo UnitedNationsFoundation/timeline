@@ -1,0 +1,16 @@
+{
+  "name": "UNF20Year/timeline",
+  "description": "",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/UNF20Year/timeline",
+  "authors": [
+    {
+      "name": "UNF",
+      "homepage": "https://unfoundation.org"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.6"
+  }
+}
