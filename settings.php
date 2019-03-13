@@ -300,7 +300,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'uploadedTo',
+                                                                        'library'       =>  'all',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
