@@ -93,7 +93,7 @@ function initTimeline()
 		timelineCarousels[$key].trigger("to.owl.carousel", 0);
 		jQuery('.timeline-carrousel-buttons').removeClass('playing').addClass('paused');
 		jQuery('.timeline-carousel:not(.'+element+')').hide();
-		jQuery('.'+element).fadeIn();
+		jQuery('.'+element).show();
 
 		jQuery(".timeline-dots li").removeClass('second-level').removeClass('third-level').removeClass('second');
 		$item.siblings().removeClass('active').removeClass('second');

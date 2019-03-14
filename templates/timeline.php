@@ -30,7 +30,7 @@
 						$total_posts    =   $query->post_count;
 						$addClass       =   ( $total_posts > 4 )    ?   ' multiple-owl-carousel' :   ( ($total_posts == 1) ? ' single-owl-carousel':'');
 
-						echo '<div class="timeline-carousel loaded timeline-'.$key.$addClass.'" style="display:'.((!$key) ? '':'none').';">';
+						echo '<div class="timeline-carousel loaded timeline-'.$key.$addClass.'" style="display:'.((!$key) ? '':'').';">';
 
 						while( $query->have_posts() ):
 							$query->the_post();

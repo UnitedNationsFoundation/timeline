@@ -16,7 +16,7 @@
         {
             private $_post_type     =   'timeline_item';
             private $_taxonomy_name =   'timeline_date';
-            private $_max_load_items=   3;
+            private $_max_load_items=   30;
 
             public function __construct()
             {
@@ -142,7 +142,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'all',
+                                                                        'library'       =>  'uploadedTo',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
@@ -300,7 +300,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'all',
+                                                                        'library'       =>  'uploadedTo',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
@@ -467,7 +467,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'all',
+                                                                        'library'       =>  'uploadedTo',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
