@@ -24,12 +24,12 @@
                 add_action( 'init',             array($this,'register_post_type'));
                 add_action( 'acf/init',         array($this,'add_acf_fields'));
 				add_action( 'after_setup_theme',array($this,'custom_theme_setup'));
-					
+
                 add_shortcode( 'timeline',      array($this,'show_timeline'));
 
                 add_action('wp_ajax_nopriv_load_timeline_posts',array($this,'load_posts'));
 				add_action('wp_ajax_load_timeline_posts',		array($this,'load_posts'));
-					
+
 				//add_filter('oembed_result', array($this,'autoplay_youtube_embed_url'), 10, 3);
             }
 
@@ -112,12 +112,12 @@
 
                 register_taxonomy_for_object_type($this->getTaxonomy(), $this->getPostType());
             }
-				
+
 			public function custom_theme_setup()
 			{
 				add_image_size( 'background-size', 2500, 2000 );
 			}
-				
+
             public function add_acf_fields()
             {
                 if( !function_exists('acf_add_local_field_group') )
@@ -142,7 +142,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'uploadedTo',
+                                                                        'library'       =>  'all',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
@@ -300,7 +300,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'uploadedTo',
+                                                                        'library'       =>  'all',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
@@ -376,7 +376,7 @@
                                                                                                 'class' =>  '',
                                                                                                 'id'    =>  '',
                                                                                             )
-                                                                    ),																	
+                                                                    ),
                                                                     array(
                                                                         'key'           =>  'field_timeline_content_separator',
                                                                         'label'         =>  'Content',
@@ -396,7 +396,7 @@
                                                                                                 'class' =>  '',
                                                                                                 'id'    =>  '',
                                                                                             )
-                                                                    ),																	
+                                                                    ),
                                                                     array(
                                                                         'key'           =>  'field_timeline_overlay_color',
                                                                         'label'         =>  'Overlay Color',
@@ -467,7 +467,7 @@
                                                                                             ),
                                                                         'return_format' =>  'array',
                                                                         'preview_size'  =>  'thumbnail',
-                                                                        'library'       =>  'uploadedTo',
+                                                                        'library'       =>  'all',
                                                                         'min_width'     =>  '',
                                                                         'min_height'    =>  '',
                                                                         'min_size'      =>  '',
@@ -683,9 +683,9 @@
                                 'meta_type'         =>  'DATE',
                                 'order'			    =>  'ASC'*/
                             );
-					
+
                 $query  =   new WP_Query($args);
-					
+
                 return $query;
             }
 
@@ -721,7 +721,7 @@
 				wp_send_json($result);
                 exit;
             }
-			
+
 			public function autoplay_youtube_embed_url($html, $url, $args)
 			{
 				if( is_array($args) and array_key_exists('autoplay',$args) && ($args['autoplay'] == 1) )
