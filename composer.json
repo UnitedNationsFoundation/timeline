@@ -1,8 +1,8 @@
 {
-  "name": "UNF20Year/timeline",
-  "description": "",
+  "name": "unitednationsfoundation/timeline",
+  "description": "Updated version for the timeline",
   "keywords": ["wordpress", "plugin"],
-  "homepage": "https://github.com/UNF20Year/timeline",
+  "homepage": "https://github.com/UnitedNationsFoundation/timeline",
   "authors": [
     {
       "name": "UNF",
