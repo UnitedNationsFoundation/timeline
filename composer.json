@@ -9,6 +9,12 @@
       "homepage": "https://unfoundation.org"
     }
   ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    }
+  ],
   "type": "wordpress-plugin",
   "require": {
     "php": ">=8.0",
