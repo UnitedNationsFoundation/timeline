@@ -17,8 +17,7 @@
   ],
   "type": "wordpress-plugin",
   "require": {
-    "php": ">=8.0",
-    "wpengine/advanced-custom-fields-pro": "5.9.9"
+    "php": ">=8.0"
   }
   
 }
