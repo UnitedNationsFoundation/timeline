@@ -3,7 +3,7 @@
     Plugin Name: Timeline
     Plugin URI:
     Description: Functions for timeline including CPT, taxonomy, custom fields, shortcode
-    Version: 1.0
+    Version: 1.3
     Author: Melisa
 */
 ?>
